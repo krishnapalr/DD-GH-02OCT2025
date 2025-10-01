@@ -21,7 +21,7 @@ resource "datadog_monitor" "PRD-TCD-Azure_App_Service_5xx_Error_namename" {
   monitor_thresholds {
     critical = 5
   }
-  name = "Azure App Service 5xx Error – {{name.name}}"
+  name = "PRD-TCD-Azure App Service 5xx Error – {{name.name}}"
   type = "query alert"
   tags = ["env:prd", "deploy_by:iac", "tr_application-asset-insight-id:208548"]
   query = <<EOT
