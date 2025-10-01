@@ -13,7 +13,7 @@ provider "datadog" {
 }
 
 
-resource "datadog_monitor" "Azure_App_Service_5xx_Error_namename" {
+resource "datadog_monitor" "PRD-TCD-Azure_App_Service_5xx_Error_namename" {
   evaluation_delay = 300
   new_group_delay = 60
   on_missing_data = "show_no_data"
