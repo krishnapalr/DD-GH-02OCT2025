@@ -23,7 +23,7 @@ resource "datadog_monitor" "Azure_App_Service_5xx_Error_namename" {
   }
   name = "Azure App Service 5xx Error – {{name.name}}"
   type = "query alert"
-  tags = ["env:prd", "tr_application-asset-insight-id:208548"]
+  tags = ["env:prd", "deploy_by:iac", "tr_application-asset-insight-id:208548"]
   query = <<EOT
 sum(last_15m):sum:azure.app_services.http5xx{env:prd OR tr_application-asset-insight-id:208548} by {name}.as_count() / sum:azure.app_services.requests{env:prd OR tr_application-asset-insight-id:208548} by {name}.as_count() * 100 > 5
 EOT
