@@ -40,10 +40,10 @@ We detected an elevated number of HTTP 5xx errors:
 
 This may indicate backend issues or service instability. Please investigate logs, recent deployments, and dependencies.
 
-📍 Tags: {{tags}}
-📅 Time: {{timestamp}}
+Tags: {{tags}}
+Time: {{timestamp}}
 
-🔗 [View in Datadog]({{link}})
+[View in Datadog]({{link}})
 
 ---
 
@@ -55,10 +55,10 @@ The 5xx error rate has returned to normal for service: {{name.name}}.
 
 No further action is required unless issues reoccur.
 
-📍 Tags: {{tags}}
-📅 Time: {{timestamp}}
+Tags: {{tags}}
+Time: {{timestamp}}
 
-🔗 [View in Datadog]({{link}})
+[View in Datadog]({{link}})
 
 EOT
 }
